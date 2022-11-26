@@ -1,0 +1,43 @@
+.section-1{
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+}
+
+
+
+/* .div1 {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(217, 38, 35);
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+
+} */
+
+.btnDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.btn{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(254, 67, 67);
+    border-radius: 50px;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+/* .btn:hover{
+    background-color: brown;
+} */
+/* hover not working after mousedown */
