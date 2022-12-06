@@ -104,6 +104,7 @@ function mouseOver(){
 }
 
 function mouseOut(){
+    document.getElementById('btn').style.color = 'black'
     document.getElementById("btn").style.backgroundColor = 'rgb(254, 67, 67)'
 }    
 
@@ -126,6 +127,53 @@ function mouseUp() {
 
 function myFunction(){
     alert("Hello")
+}
+
+const btn3 = document.querySelector('#btn3')
+const btn4 = document.querySelector('#btn4')
+
+console.log(btn3, btn4)
+
+function lesson5(event){
+  event.target.textContent = 'clicked'
+}
+
+btn3.addEventListener('click', lesson5);
+btn4.addEventListener('click', lesson5);
+btn4.addEventListener('mouseenter', (event)=> {
+    event.target.style.heigh = '200px'
+    event.target.style.width = '200px'
+})
+btn4.addEventListener('mouseleave', (event) => {
+    event.target.style.heigh = 'auto'
+    event.target.style.width = 'auto'
+
+})
+
+const btn5 = document.querySelector('#btn5')
+const btn6 = document.querySelector('#btn6')
+
+function newFunction(event){
+    event.target.style.backgroundColor = 'purple'
+    btn5.removeEventListener('click', newFunction)
+}
+
+btn5.addEventListener('click', newFunction)
+btn6.addEventListener('click', newFunction)
+
+
+// document.getElementById("div1").style.height = "200px"
+// document.getElementById("div1").style.width = "200px"
+// document.getElementById("div1").style.backgroundColor = 'red'
+// document.getElementById("div1").style.marginTop = "2%"
+
+
+const myScroll = document.querySelector('#div1')
+
+myScroll.addEventListener("click", someFunction);
+
+function someFunction() {
+    myScroll.style.backgroundColor = "silver"
 }
 
 

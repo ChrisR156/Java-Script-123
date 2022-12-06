@@ -1,7 +1,9 @@
-.section-1{
+.sectionStyle{
     height: 100vh;
     width: 100%;
-    background-color: aqua;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    background-color: rgb(60, 0, 255);
 }
 
 
@@ -26,6 +28,7 @@
     height: 100%;
     width: 100%;
     flex-direction: column;
+    
 }
 
 .btn{
@@ -37,7 +40,79 @@
     cursor: pointer;
 }
 
+.btn2{
+    margin-bottom: 2%;
+}
+
+.btn3{
+    margin-bottom: 2%;
+}
+
+.iframe{
+    margin-bottom: 2%;
+}
+
+.btn5Class{
+    margin-bottom: 2%;
+}
+
+
+.div1{
+    transform: translate(100px);
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin-top: 2%;
+
+    animation-name: div1Animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-direction: forwards;
+    animation-play-state: running;
+}
+
+@keyframes div1Animation{
+   0%{
+    transform: translatex(-100px);
+   }
+}
+
 /* .btn:hover{
     background-color: brown;
 } */
 /* hover not working after mousedown */
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 500px;
+  }
